@@ -1,85 +1,92 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Work Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
 }
 
 body {
-
-    background-color: #F7FCFD;
+  background-color: #f7fcfd;
 }
 
-.page{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.page {
+  display: flex;
+  flex-direction: column;
 }
 
-.navbar{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    .navbar-item{
-        padding: 2em;
-        a {
-            background-color: white;
-            color: black;
-            text-decoration: none;
-            padding: 15px 18px;
-            border: 2px solid black;
-            border-radius: 50px;
-            font-weight: 800;
-            transition: 400ms;
-            &:hover{
-                cursor: pointer;
-                color: white;
-                background-color: black;
-            }
-        }
-        
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  .navbar-item {
+    padding: 2em;
+    a {
+      background-color: white;
+      color: black;
+      text-decoration: none;
+      padding: 15px 18px;
+      border: 2px solid black;
+      border-radius: 50px;
+      font-weight: 800;
+      transition: 400ms;
+      &:hover {
+        cursor: pointer;
+        color: white;
+        background-color: black;
+      }
     }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
 }
-
 
 .content {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  margin-top: 10em;
+  max-width: 800px;
+  h1 {
+    font-weight: 900;
+    font-size: 80px;
+    margin-bottom: 10px;
+  }
+  p {
+    font-family: "Montserrat", sans-serif;
+    margin-top: 5px;
+  }
+  form {
     display: flex;
-    flex-direction: column;
-    transform: translateX(75%);
-    margin-top: 10em;
-    max-width: 800px;
-    h1{
-        font-weight: 900;
-        font-size: 80px;
-        margin-bottom: 10px;
+    margin-top: 1em;
+    input {
+      border: none;
     }
-    p{
-        font-family: 'Montserrat', sans-serif;
-        margin-top: 5px;
+    .email {
+      padding: 15px;
+      min-width: 400px;
+      border: 1px solid black;
+      border-radius: 0;
     }
-    form{
-        display: flex;
-        margin-top: 1em;
-        input{
-            border: none;
-        }
-        .email{
-            padding: 15px;
-            min-width: 400px;
-            border: 1px solid black;
-            border-radius: 0;
-        }
-        .btn {
-            padding: 20px;
-            min-width: 50px;
-            font-weight: 900;
-            background-color: black;
-            color: white;
-        }
+    .btn {
+      padding: 20px;
+      min-width: 50px;
+      font-weight: 900;
+      background-color: black;
+      color: white;
+      transition: 200ms;
+      &:hover {
+        cursor: pointer;
+        background-color: #303030;
+      }
     }
+  }
 }
-

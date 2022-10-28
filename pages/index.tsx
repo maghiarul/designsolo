@@ -18,6 +18,7 @@ export default function Home() {
         </div>
       </div>
 
+
       <div className="content">
         <h1>16 WAYS TO MAKE MORE MONEY AS A FREELANCE UI/UX DESIGNER</h1>
         <p>Learn how the top 1% of UI/UX freelancers earn money.</p>
