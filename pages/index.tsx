@@ -29,6 +29,20 @@ export default function Home() {
           <input type="submit" value="READ NOW" className="btn" />
         </form>
       </div>
+
+      <div className="footer">
+        <a href="/about">
+          About
+        </a>
+        <a href="/articles">
+          Articles          
+        </a>
+        <a href="free-guides">
+          Free Guides
+        </a>
+      </div>
+
+
     </div>
   );
 }
