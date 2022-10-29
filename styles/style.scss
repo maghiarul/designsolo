@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@800&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap");
 
 * {
   margin: 0;
@@ -55,7 +58,7 @@ body {
   margin-top: 7em;
   max-width: 800px;
   h1 {
-    font-weight: 900;
+    font-weight: 800;
     font-size: 80px;
     margin-bottom: 10px;
   }
@@ -95,14 +98,40 @@ body {
   left: 50%;
   top: 90%;
   transform: translate(-150%, -50%);
-  a{
-    color: #8B8E90;
+  a {
+    color: #8b8e90;
     text-decoration: none;
     padding: 10px;
     margin: 10px;
     transition: 200ms;
-    &:hover{
+    &:hover {
       color: #7c8388;
+    }
+  }
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  margin-top: 8em;
+  max-width: 1000px;
+  .about-heading {
+    h1 {
+      font-weight: 700;
+      font-size: 80px;
+      margin-bottom: 30px;
+    }
+  }
+  .about-image {
+    img {
+      max-width: 100%;
+      height: auto;
     }
   }
 }
